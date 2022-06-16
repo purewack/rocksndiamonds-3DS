@@ -110,7 +110,7 @@ SDL_LIBS = -lSDL2_image -lSDL2_mixer -lSDL2_net
 endif
 
 SYS_CFLAGS := -DTARGET_SDL2 $(shell sdl2-config --cflags)
-SYS_LDFLAGS := $(SDL_LIBS) $(shell sdl2-config --libs) -lm -lz
+SYS_LDFLAGS := $(SDL_LIBS) $(shell sdl2-config --libs) -L/usr/lib -L/usr/bin -lm -lz
 endif
 
 
